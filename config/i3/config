@@ -106,6 +106,9 @@ exec --no-startup-id nm-applet
 # Compositor
 exec --no-startup-id picom -b
 
+# Restore wallpaper
+exec --no-startup-id nitrogen --restore
+
 
 
 
