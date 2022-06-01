@@ -36,7 +36,7 @@ swapon /dev/sda2
 
 Одной командой:
 ```
-pacman -S xfce4 materia-gtk-theme papirus-icon-theme apple_cursor network-manager-applet xfce4-pulseaudio-plugin xfce4-xkb-plugin xfce4-whiskermenu-plugin xfce4-screensaver ristretto maim sclip i3 picom alacritty
+pacman -S xfce4 i3 materia-gtk-theme papirus-icon-theme apple_cursor network-manager-applet xfce4-pulseaudio-plugin xfce4-xkb-plugin xfce4-whiskermenu-plugin xfce4-screensaver ristretto maim sclip picom alacritty
 ```
 
 ## Конфиги для i3 picom alacritty
