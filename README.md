@@ -27,9 +27,19 @@ swapon /dev/sda2
 Установить утилиту **timeshift-bin** из AUR
 
 
-# Рабочее окружение Xfce4 + i3
+# Рабочее окружение Xfce4 + i3wm
 
-*TODO: Установка окружения*
+1. Установить группу пакетов **xfce4** **i3**
+2. Установить пакеты оформления для xfc3: **materia-gtk-theme** **papirus-icon-theme** **apple_cursor**
+3. Всякие апплеты и плагины: **network-manager-applet** **xfce4-pulseaudio-plugin** **xfce4-xkb-plugin** **xfce4-whiskermenu-plugin** **xfce4-screensaver**
+4. Прочие утилиты: **ristretto** **maim** **sclip** **picom** **alacritty**
+
+Одной командой:
+```
+pacman -S xfce4 materia-gtk-theme papirus-icon-theme apple_cursor network-manager-applet xfce4-pulseaudio-plugin xfce4-xkb-plugin xfce4-whiskermenu-plugin xfce4-screensaver ristretto maim sclip i3 picom alacritty
+```
+
+## Конфиги для i3 picom alacritty
 
 Создать линк на конфиг файлы
 ```
