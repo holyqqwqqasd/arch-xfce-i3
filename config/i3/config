@@ -6,6 +6,13 @@ set $mod Mod4
 
 
 
+
+
+
+
+
+
+
 # CORES
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -81,6 +88,20 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# You can also use any non-zero value if you'd like to have a border
+for_window [class=".*"] border pixel 0
+
+# Gaps
+gaps inner 30
+
+
+
+
+
+
+
+
+
 
 
 
@@ -108,6 +129,18 @@ exec --no-startup-id picom -b
 
 # Restore wallpaper
 exec --no-startup-id nitrogen --restore
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
