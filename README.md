@@ -35,13 +35,13 @@ swapon /dev/sda2
 2. Установить пакеты оформления для xfc3: **materia-gtk-theme** **papirus-icon-theme** **apple_cursor**
 3. Всякие апплеты и плагины: **network-manager-applet** **xfce4-pulseaudio-plugin** **xfce4-xkb-plugin** **xfce4-whiskermenu-plugin** **xfce4-screensaver**
 4. Прочие утилиты: **ristretto** **maim** **sclip** **picom** **alacritty** **nitrogen**
-5. Из аура вытянуть **xfce4-i3-workspaces-plugin-git**
+5. Из аура вытянуть **xfce4-i3-workspaces-plugin-git** **system-monitoring-center**
 
 Одной командой:
 ```
 pacman -S xfce4 i3 materia-gtk-theme papirus-icon-theme apple_cursor network-manager-applet xfce4-pulseaudio-plugin xfce4-xkb-plugin xfce4-whiskermenu-plugin xfce4-screensaver ristretto maim sclip picom alacritty nitrogen
 
-paru -S xfce4-i3-workspaces-plugin-git
+paru -S xfce4-i3-workspaces-plugin-git system-monitoring-center
 ```
 
 ### Меняем оконный менеджер в xfce4 на i3wm
