@@ -31,15 +31,15 @@ swapon /dev/sda2
 
 ### Установка необходимого
 
-1. Установить группу пакетов **xfce4** **i3-gaps** **lightdm** **lightdm-gtk-greeter**
-2. Установить пакеты оформления для xfc3: **materia-gtk-theme** **papirus-icon-theme** **apple_cursor**
-3. Всякие апплеты и плагины: **network-manager-applet** **xfce4-pulseaudio-plugin** **xfce4-xkb-plugin** **xfce4-whiskermenu-plugin** **xfce4-screensaver**
-4. Прочее: **ristretto** **maim** **sclip** **picom** **alacritty** **nitrogen**
-5. Из аура вытянуть: **noto-fonts-emoji-apple** **xfce4-i3-workspaces-plugin-git**
+1. Установить группу пакетов **xfce4 i3-gaps**
+2. Установить пакеты оформления для xfc3: **materia-gtk-theme papirus-icon-theme apple_cursor**
+3. Всякие апплеты и плагины: **network-manager-applet xfce4-pulseaudio-plugin xfce4-xkb-plugin xfce4-whiskermenu-plugin**
+4. Прочее: **ristretto maim sclip picom alacritty nitrogen**
+5. Из аура вытянуть: **noto-fonts-emoji-apple xfce4-i3-workspaces-plugin-git**
 
 Одной командой:
 ```
-pacman -S xfce4 i3-gaps lightdm lightdm-gtk-greeter materia-gtk-theme papirus-icon-theme apple_cursor network-manager-applet xfce4-pulseaudio-plugin xfce4-xkb-plugin xfce4-whiskermenu-plugin xfce4-screensaver ristretto maim sclip picom alacritty nitrogen
+pacman -S xfce4 i3-gaps materia-gtk-theme papirus-icon-theme apple_cursor network-manager-applet xfce4-pulseaudio-plugin xfce4-xkb-plugin xfce4-whiskermenu-plugin ristretto maim sclip picom alacritty nitrogen
 
 paru -S noto-fonts-emoji-apple xfce4-i3-workspaces-plugin-git
 ```
@@ -49,6 +49,12 @@ paru -S noto-fonts-emoji-apple xfce4-i3-workspaces-plugin-git
 1. Вырубить в сессии *Settings -> Session and Startup -> Current Session* сохранение информации о **xfwm4** и **xfdesktop** (не забыть сохранить), и добавить на вкладке *Application Autostart* автозапуск **i3**
 2. В *Settings -> Keyboard* удалить все шорткаты чтобы не мешалось в i3
 3. Добавить на панель задач xfce4-i3-workspaces-plugin
+
+### Локер и экран входа
+
+1. Устанавливаем пакеты: **lightdm lightdm-webkit2-greeter lightdm-webkit-theme-litarvan**
+2. В `/etc/lightdm/lightdm.conf` установить значение `greeter-session=lightdm-webkit2-greeter`
+3. В `/etc/lightdm/lightdm-webkit2-greeter.conf` установить значение `webkit-theme` (или `theme`) в `litarvan`
 4. Чтобы lightdm локер блокировался через xflock4, надо выполнить команду: `xfconf-query --create -c xfce4-session -p /general/LockCommand -t string -s "light-locker-command --lock"`
 
 ### Конфиги для i3 picom alacritty
