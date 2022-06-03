@@ -57,6 +57,11 @@ paru -S noto-fonts-emoji-apple xfce4-i3-workspaces-plugin-git
 3. В `/etc/lightdm/lightdm-webkit2-greeter.conf` установить значение `webkit-theme` (или `theme`) в `litarvan`
 4. Чтобы lightdm локер блокировался через xflock4, надо выполнить команду: `xfconf-query --create -c xfce4-session -p /general/LockCommand -t string -s "light-locker-command --lock"`
 
+Одной командой:
+```
+pacman -S lightdm lightdm-webkit2-greeter lightdm-webkit-theme-litarvan
+```
+
 ### Конфиги для i3 picom alacritty
 
 Все настройки i3 (автозапуск, хоткеи) в папке **config**
