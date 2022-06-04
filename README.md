@@ -34,7 +34,7 @@ swapon /dev/sda2
 1. Установить группу пакетов **xfce4 i3-gaps**
 2. Установить пакеты оформления для xfc3: **materia-gtk-theme papirus-icon-theme apple_cursor**
 3. Всякие апплеты и плагины: **network-manager-applet xfce4-pulseaudio-plugin xfce4-xkb-plugin xfce4-whiskermenu-plugin**
-4. Прочее: **ristretto maim sclip picom alacritty nitrogen**
+4. Прочее: **ristretto maim sclip picom alacritty nitrogen *lxappearance***
 5. Из аура вытянуть: **noto-fonts-emoji-apple xfce4-i3-workspaces-plugin-git**
 
 Одной командой:
