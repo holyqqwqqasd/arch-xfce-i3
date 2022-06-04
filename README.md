@@ -56,6 +56,7 @@ paru -S noto-fonts-emoji-apple xfce4-i3-workspaces-plugin-git
 2. В `/etc/lightdm/lightdm.conf` установить значение `greeter-session=lightdm-webkit2-greeter`
 3. В `/etc/lightdm/lightdm-webkit2-greeter.conf` установить значение `webkit-theme` (или `theme`) в `litarvan`
 4. Чтобы lightdm локер блокировался через xflock4, надо выполнить команду: `xfconf-query --create -c xfce4-session -p /general/LockCommand -t string -s "light-locker-command --lock"`
+5. Чтобы настроить фото пользователя в lightdm, нужно поковыряться в `/var/lib/AccountsService/*`
 
 Одной командой:
 ```
