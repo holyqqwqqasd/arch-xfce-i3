@@ -46,9 +46,10 @@ paru -S noto-fonts-emoji-apple xfce4-i3-workspaces-plugin-git
 
 ### Меняем оконный менеджер в xfce4 на i3wm
 
-1. Вырубить в сессии *Settings -> Session and Startup -> Current Session* сохранение информации о **xfwm4** и **xfdesktop** (не забыть сохранить), и добавить на вкладке *Application Autostart* автозапуск **i3**
-2. В *Settings -> Keyboard* удалить все шорткаты чтобы не мешалось в i3
-3. Добавить на панель задач xfce4-i3-workspaces-plugin
+1. Вырубить в сессии *Settings -> Session and Startup -> Current Session* сохранение информации о **xfwm4** и **xfdesktop** т.е. установить *Never* (и не забыть сохранить!)
+2. Добавить в *Settings -> Session and Startup -> Application Autostart* автозапуск **i3**
+3. В *Settings -> Keyboard* удалить все шорткаты чтобы не мешалось в i3
+4. Добавить на панель задач xfce4-i3-workspaces-plugin
 
 ### Локер и экран входа
 
