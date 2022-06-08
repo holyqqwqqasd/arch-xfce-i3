@@ -70,12 +70,8 @@ pacman -S lightdm lightdm-webkit2-greeter lightdm-webkit-theme-litarvan
 
 Создать линк на конфиг файлы
 ```
-ln -s $PWD/config/i3/config ~/.config/i3/config &&
-ln -s $PWD/config/picom/picom.conf ~/.config/picom/picom.conf &&
+ln -s $PWD/config/i3/config ~/.config/i3/config
+ln -s $PWD/config/picom/picom.conf ~/.config/picom/picom.conf
 ln -s $PWD/config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
-```
-
-Если нужно удалить старые файлы
-```
-rm ~/.config/i3/config ~/.config/picom/picom.conf ~/.config/alacritty/alacritty.yml
+ln -s $PWD/config/.zshrc ~/.zshrc
 ```
