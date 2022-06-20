@@ -9,7 +9,7 @@ promptinit
 alias ll='ls -al --color'
 alias ..='cd ..'
 
-PROMPT=' %B%F{9}%T %n%f%b %F{51}%~%f $ '
+PROMPT='%B%F{9}%T %n%f %F{51}%~%f%b $ '
 
 if [ -f /usr/bin/grc ]; then
     alias ping="grc --colour=auto ping"
