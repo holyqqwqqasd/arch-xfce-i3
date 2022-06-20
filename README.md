@@ -35,11 +35,12 @@ swapon /dev/sda2
 2. Установить пакеты оформления для xfc3: **materia-gtk-theme papirus-icon-theme apple_cursor**
 3. Всякие апплеты и плагины: **network-manager-applet xfce4-pulseaudio-plugin xfce4-xkb-plugin xfce4-whiskermenu-plugin**
 4. Прочее: **ristretto maim sclip picom alacritty nitrogen *lxappearance***
-5. Из аура вытянуть: **noto-fonts-emoji-apple xfce4-i3-workspaces-plugin-git**
+5. Шрифт: **ttf-ubuntu-font-family**
+6. Из аура вытянуть: **noto-fonts-emoji-apple xfce4-i3-workspaces-plugin-git**
 
 Одной командой:
 ```
-pacman -S xfce4 i3-gaps materia-gtk-theme papirus-icon-theme apple_cursor network-manager-applet xfce4-pulseaudio-plugin xfce4-xkb-plugin xfce4-whiskermenu-plugin ristretto maim sclip picom alacritty nitrogen
+pacman -S xfce4 i3-gaps materia-gtk-theme papirus-icon-theme apple_cursor network-manager-applet xfce4-pulseaudio-plugin xfce4-xkb-plugin xfce4-whiskermenu-plugin ristretto maim sclip picom alacritty nitrogen ttf-ubuntu-font-family
 
 paru -S noto-fonts-emoji-apple xfce4-i3-workspaces-plugin-git
 ```
