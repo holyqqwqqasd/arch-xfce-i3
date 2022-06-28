@@ -7,13 +7,11 @@ mkfs.btrfs -L arch /dev/sda3 -f
 mount /dev/sda3 /mnt
 cd /mnt
 btrfs subvolume create @
-btrfs subvolume create @var
 btrfs subvolume create @home
 cd /
 umount /mnt
 mount -o noatime,compress=zstd,subvol=@ /dev/sda3 /mnt
-mkdir -p /mnt/{home,boot/efi,var}
-mount -o noatime,compress=zstd,subvol=@var /dev/sda3 /mnt/var
+mkdir -p /mnt/{home,boot/efi}
 mount -o noatime,compress=zstd,subvol=@home /dev/sda3 /mnt/home
 mount /dev/sda1 /mnt/boot/efi
 swapon /dev/sda2
